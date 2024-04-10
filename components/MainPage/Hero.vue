@@ -125,8 +125,7 @@ import Operation from './Operation.vue';
 </template>
 <style lang="scss" scoped>
 .hero {
-    height: 100vh;
-    min-height: 720px;
+    height: 90vh;
     background: var(--blue) url('../../assets/img/main-bg.png') no-repeat;
     background-size: cover;
     border-radius: 0 0 40px 50px;

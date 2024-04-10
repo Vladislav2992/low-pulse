@@ -1,5 +1,15 @@
 <script setup>
 const isMenuOpen = ref(false)
+
+const openMenu = ()=> {
+    if (isMenuOpen.value === true) {
+        isMenuOpen.value = false
+        document.querySelector('body').style.overflow = 'visible'
+    } else {
+        isMenuOpen.value = true
+        document.querySelector('body').style.overflow = 'hidden'
+    }
+}
 </script>
 <template>
     <header class="header">
@@ -51,7 +61,7 @@ const isMenuOpen = ref(false)
                 </div>
             </nav>
 
-            <div :class="{'burger':true, 'active' : isMenuOpen}" @click="isMenuOpen = !isMenuOpen">
+            <div :class="{'burger':true, 'active' : isMenuOpen}" @click="openMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -212,7 +222,7 @@ const isMenuOpen = ref(false)
         right: -2px;
         bottom: 0;
         height: calc(100dvh - 61px);
-        width: 100%;
+        width: calc(100% + 3px);
         z-index: 5;
         background: var(--blue);
         display: flex;

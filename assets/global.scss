@@ -69,6 +69,11 @@ body {
     font-family: 'SegoeUI', sans-serif;
     font-size: 15px;
     line-height: 120%;
+    position: relative;
+
+    &.disabled {
+        overflow: hidden;
+    }
 }
 a {
     color: inherit;
