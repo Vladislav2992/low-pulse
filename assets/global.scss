@@ -58,6 +58,7 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow-x: clip;
 }
 main {
     flex: 1 1 auto;
@@ -132,11 +133,11 @@ section, aside {
 .btn_border-white {
     color: var(--white);
     border-color: var(--white);
-
+    transition: outline 0s;
     &:hover {
         color: inherit;
         border-color: var(--white);
-        outline: 3px solid #fff;
+        outline: 1px solid #fff;
         outline-offset: -3px;
     }
 }

@@ -76,7 +76,11 @@
     border: 1px solid rgba(102, 110, 170, 0.3);
     border-radius: 42px;
     right: 5px;
-    bottom: 4px;
+    bottom: 4px;  transition: color .3s;
+
+    &:hover {
+        color: var(--light-blue);
+    }
 }
 
 @media(max-width: 1100px) {

@@ -2,36 +2,36 @@
     <footer class="footer">
         <div class="container">
             <ul class="footer__nav">
-                <li class="footer__first-lavel"><router-link to="/">Мониторинг</router-link>
+                <li class="footer__first-level"><router-link to="/">Мониторинг</router-link>
                     <ul class="footer__nav-second">
-                        <li class="footer__second-lavel"><router-link to="/">Мониторинг сайта</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">DNS мониторинг</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">Мониторинг сервера</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">Сердцебиение</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Мониторинг сайта</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">DNS мониторинг</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Мониторинг сервера</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Сердцебиение</router-link></li>
                     </ul>
                 </li>
-                <li class="footer__first-lavel"><router-link to="/">Управление</router-link>
+                <li class="footer__first-level"><router-link to="/">Управление</router-link>
                     <ul class="footer__nav-second">
-                        <li class="footer__second-lavel"><router-link to="/">Кастомные домены</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">Уведомления</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">Статус</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">Проекты</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Кастомные домены</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Уведомления</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Статус</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Проекты</router-link></li>
                     </ul>
                 </li>
-                <li class="footer__first-lavel"><router-link to="/">Личные данные</router-link>
+                <li class="footer__first-level"><router-link to="/">Личные данные</router-link>
                     <ul class="footer__nav-second">
-                        <li class="footer__second-lavel"><router-link to="/">Аккаунт</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">Кастомные домены</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">План</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">API</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Аккаунт</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Кастомные домены</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">План</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">API</router-link></li>
                     </ul>
                 </li>
-                <li class="footer__first-lavel"><router-link to="/">Инструмены</router-link>
+                <li class="footer__first-level"><router-link to="/">Инструмены</router-link>
                     <ul class="footer__nav-second">
-                        <li class="footer__second-lavel"><router-link to="/">Просмотр DNS</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">Просмотр SSL</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">Просмотр IP</router-link></li>
-                        <li class="footer__second-lavel"><router-link to="/">Пинг</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Просмотр DNS</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Просмотр SSL</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Просмотр IP</router-link></li>
+                        <li class="footer__second-level"><router-link to="/">Пинг</router-link></li>
                     </ul>
                 </li>
             </ul>
@@ -111,7 +111,7 @@
     display: flex;
     justify-content: space-between;
 }
-.footer__first-lavel > a { 
+.footer__first-level > a { 
     font-size: 20px; 
     font-weight: 700;
     display: block;
@@ -128,6 +128,13 @@
     li {
         margin-bottom: 20px;
     }
+}
+.footer__second-level a {
+    transition: color .3s;
+
+&:hover {
+    color: var(--light-blue);
+}
 }
 .footer__links {
     display: flex;
@@ -205,7 +212,7 @@
            margin-bottom: 15px; 
         }
     }
-    .footer__first-lavel {
+    .footer__first-level {
         margin-bottom: 30px;
 
         & > a {

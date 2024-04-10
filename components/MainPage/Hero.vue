@@ -210,6 +210,11 @@ import Operation from './Operation.vue';
     border-radius: 42px;
     right: 5px;
     bottom: 4px;
+    transition: color .3s;
+
+    &:hover {
+        color: var(--light-blue);
+    }
 }
 
 .services {

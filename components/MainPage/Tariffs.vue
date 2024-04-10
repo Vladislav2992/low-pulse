@@ -135,7 +135,7 @@
     color: #828282;
     
     span {
-        display: inline-block;
+        display: block;
         padding: 9px;
         cursor: pointer;
         text-align: center;
@@ -180,6 +180,7 @@
     right: 0;
     bottom: 0;  
     z-index: 2;
+    cursor: pointer;
 }
 
 .cards {

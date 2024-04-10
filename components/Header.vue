@@ -51,7 +51,7 @@ const isMenuOpen = ref(false)
                 </div>
             </nav>
 
-            <div class="burger" @click="isMenuOpen = !isMenuOpen">
+            <div :class="{'burger':true, 'active' : isMenuOpen}" @click="isMenuOpen = !isMenuOpen">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -99,6 +99,7 @@ const isMenuOpen = ref(false)
         height: 3px;
         background: var(--white);
         border-radius: 2px;
+        transition: transform .3s;
     }
 }
 
@@ -204,14 +205,11 @@ const isMenuOpen = ref(false)
 
 
 @media (max-width: 1084px) {
-    .container {
-        overflow-x: clip;
-    }
     .header__menu {
         position: absolute;
         top: 47px;
-        left: -1px;
-        right: -1px;
+        left: -2px;
+        right: -2px;
         bottom: 0;
         height: calc(100dvh - 61px);
         width: 100%;
@@ -235,6 +233,20 @@ const isMenuOpen = ref(false)
     }
     .burger {
         display: flex;
+
+        &.active {
+            span:nth-child(1) {
+                transform: translate(-4px, 6px) rotate(45deg);
+                width: 26px;
+            }
+            span:nth-child(2) {
+                opacity: 0;
+            }
+            span:nth-child(3) {
+                transform: translate(-3px, -10px) rotate(-45deg);
+                width: 26px;
+            }
+        }        
     }
     .menu {
         flex-direction: column;
