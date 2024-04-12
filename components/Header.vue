@@ -76,7 +76,8 @@ const openMenu = ()=> {
     padding: 14px 0;
     background: var(--blue);
     color: var(--white);
-    border: 1px solid rgba(102, 110, 170, 0.3);
+    border-top: 1px solid rgba(102, 110, 170, 0.3);
+    border-bottom: 1px solid rgba(102, 110, 170, 0.3);
     position: fixed;
     top: 0;
     left: 0;

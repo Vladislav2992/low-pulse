@@ -128,7 +128,7 @@ import Operation from './Operation.vue';
     height: 90vh;
     background: var(--blue) url('../../assets/img/main-bg.png') no-repeat;
     background-size: cover;
-    border-radius: 0 0 40px 50px;
+    border-radius: 0 0 30px 30px;
     overflow: hidden; 
     position: relative;
 
@@ -208,7 +208,8 @@ import Operation from './Operation.vue';
     border: 1px solid rgba(102, 110, 170, 0.3);
     border-radius: 42px;
     right: 5px;
-    bottom: 4px;
+    top: 50%;
+    transform: translateY(-50%);
     transition: color .3s;
 
     &:hover {
@@ -225,8 +226,8 @@ import Operation from './Operation.vue';
 }
 
 .service {
-    padding: 10px 20px;
-    border: 1px solid #fff;
+    padding: 6px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -235,7 +236,12 @@ import Operation from './Operation.vue';
     font-size: 15px;
     font-weight: 700;
     text-align: left;
-    line-height: 130%;
+    line-height: 120%;
+}
+@media (min-width: 2000px) {
+    .hero::after {
+        height: 130px;
+    }
 }
 @media (max-width: 850px) {
     .hero {
@@ -266,6 +272,7 @@ import Operation from './Operation.vue';
     .hook {
         position: static;
         width: 100%;
+        transform: translate(0);
     }
     
     .services {

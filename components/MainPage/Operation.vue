@@ -82,7 +82,7 @@ span {
     width: 6px;
     height: 20px;
     border-radius: 4px;
-    background-color: #36D56C;
+    background-color: rgba(54, 213, 108, .6);
 }
 h3 {
     font-weight: 600;
@@ -92,7 +92,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    color: #36D56C;
+    color: rgba(54, 213, 108, .6);
     margin-bottom: 10px;
 }
 .gray {

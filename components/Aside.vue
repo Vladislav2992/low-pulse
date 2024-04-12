@@ -76,7 +76,9 @@
     border: 1px solid rgba(102, 110, 170, 0.3);
     border-radius: 42px;
     right: 5px;
-    bottom: 4px;  transition: color .3s;
+    top: 50%;
+    transform: translateY(-50%);  
+    transition: color .3s;
 
     &:hover {
         color: var(--light-blue);
@@ -104,6 +106,7 @@
     .hook {
         position: static;
         width: 100%;
+        transform: translate(0);
     }
 }
 </style>

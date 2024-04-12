@@ -73,7 +73,7 @@
     min-height: 720px;
     background: var(--blue) url('../../assets/img/main-bg.png') no-repeat;
     background-size: cover;
-    border-radius: 40px 50px 0 0 ;
+    border-radius: 30px 30px 0 0 ;
     overflow: hidden; 
     position: relative;
     padding: 120px 0;
